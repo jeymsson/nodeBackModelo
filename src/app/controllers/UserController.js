@@ -12,8 +12,15 @@ class UserController {
             return res.status(400).json({ error: 'User already exists.' });
         }
         const pars = req.body;
-        const user = await User.create(pars);
-        return res.json({ created: user });
+        const { id, name, email, provider } = await User.create(pars);
+        return res.json({
+            created: {
+                id,
+                name,
+                email,
+                provider,
+            },
+        });
     }
 }
 export default new UserController();
