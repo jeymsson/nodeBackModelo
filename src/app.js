@@ -1,6 +1,7 @@
 import express from 'express'; // const express = require('express');
 import routes from './routes';
-// const routes = require('./routes');
+import './database';
+
 class App {
     constructor() {
         this.server = express();
