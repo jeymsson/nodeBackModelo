@@ -95,7 +95,10 @@ class UserController {
     }
 
     async list(req, res) {
-        return res.json({ User: User.findAll() });
+        const u = await User.findAll();
+        return res.json({
+            User: u,
+        });
     }
 }
 export default new UserController();

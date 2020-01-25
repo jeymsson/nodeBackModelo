@@ -1,0 +1,21 @@
+
+-- Routes
+Express
+-- Testes
+Nodemon
+-- Transpilador
+Sucrase
+-- Linter
+ESLint
+-- Formata e padronisa
+Prettier
+-- Padrão de código
+EditorConfig
+-- Orm
+Sequelize (Utilize PostgreSQL ou MySQL);
+
+
+yarn add express sequelize
+yarn add nodemon eslint prettier eslint-config-prettier eslint-plugin-prettier sucrase sequelize-cli -D
+yarn eslint --init
+yarn eslint --fix src --ext .js

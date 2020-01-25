@@ -9,10 +9,9 @@ routes.get('/', async (req, res) => {
     return res.json({ Hello: 'world' });
 });
 routes.post('/session', SessionController.store);
+routes.use(authMiddleware);
 routes.post('/user', UserController.store);
 routes.get('/user', UserController.list);
-
-routes.use(authMiddleware);
 
 routes.put('/user', UserController.update);
 
