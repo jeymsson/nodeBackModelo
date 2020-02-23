@@ -19,3 +19,6 @@ yarn add express sequelize
 yarn add nodemon eslint prettier eslint-config-prettier eslint-plugin-prettier sucrase sequelize-cli -D
 yarn eslint --init
 yarn eslint --fix src --ext .js
+
+-- Multer (para Multi-part-form-data)
+yarn add express multer
