@@ -1,8 +1,12 @@
+// Routes
 import { Router } from 'express';
+// Multipart files
 import multer from 'multer';
 import multerConfig from './config/multer';
+// Controllers
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
+// Middwares
 import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
